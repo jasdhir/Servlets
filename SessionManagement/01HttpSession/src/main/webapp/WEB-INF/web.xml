@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>01HttpSession</display-name>
+  <welcome-file-list>
+    <welcome-file>ItemSelector.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>ItemCollector</display-name>
+    <servlet-name>ItemCollector</servlet-name>
+    <servlet-class>com.jasdhir.servlets.nosession.ItemCollector</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ItemCollector</servlet-name>
+    <url-pattern>/collector</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CheckOut</display-name>
+    <servlet-name>CheckOut</servlet-name>
+    <servlet-class>com.jasdhir.servlets.nosession.CheckOut</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckOut</servlet-name>
+    <url-pattern>/checkOut</url-pattern>
+  </servlet-mapping>
+  <!-- <session-config>
+  <session-timeout>5</session-timeout>
+  </session-config> -->
+</web-app>
+
+
+
+
+
+
